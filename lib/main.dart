@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'home.dart';
+import 'appbar.dart';
 
 void main() {
   runApp(const WidgetsPool());
@@ -15,7 +15,8 @@ class WidgetsPool extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Home(title: 'WIDGETSPOOL'),
+      home: const MyAppBar(title: 'WIDGETSPOOL'),
+      //home: MyBottomNavigationBar(title: 'WIDGETSPOOL'));
     );
   }
 }
