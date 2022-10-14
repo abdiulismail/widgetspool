@@ -23,7 +23,12 @@ class _MyHomePageState extends State<MyContainer> {
           margin: EdgeInsets.all(10.0),
           padding: EdgeInsets.all(0.0),
           alignment: Alignment.center, //align the child with the container
-          child: Text('hello'),
+          child: Text(
+            'hello',
+            style: TextStyle(fontWeight: FontWeight.bold),
+            overflow: TextOverflow.ellipsis,
+            textAlign: TextAlign.center,
+          ),
           //transform: Matrix4.rotationZ(0.1),
           constraints: BoxConstraints(minWidth: 2.0, minHeight: 30.0),
           decoration:
