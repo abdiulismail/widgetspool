@@ -16,16 +16,16 @@ class _MyHomePageState extends State<MySnackBar> {
         title: Text('bottom navigation bar'),
       ),
       body: Center(
-        child: Icon(Icons.ac_unit),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          SnackBar(
-            content: Text('123'),
-            backgroundColor: Colors.red,
-          );
-        },
-        child: Text('test'),
+        child: TextButton(
+          child: Text('snackbar'),
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+              content: Text("normal"),
+              duration: Duration(microseconds: 300),
+              backgroundColor: Colors.red,
+            ));
+          },
+        ),
       ),
     );
   }
