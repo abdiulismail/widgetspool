@@ -15,6 +15,9 @@ class _MyHomePageState extends State<MyAppBar>
       text: 'LEFT',
     ),
     Tab(
+      text: 'CENTER',
+    ),
+    Tab(
       text: 'RIGHT',
     )
   ];
@@ -60,28 +63,31 @@ class _MyHomePageState extends State<MyAppBar>
           tabs: myTabs,
           controller: _tabController,
           labelColor: Colors.deepPurple,
-          indicatorWeight: 20.0,
-          //indicator: BoxDecoration(color: Colors.yellow),
+          //indicatorWeight: 20.0,
+          indicator: BoxDecoration(color: Colors.yellow),
           indicatorSize: TabBarIndicatorSize
               .tab, //defines how the bounds of the selected tab indicator are computed , label - bounds are only as wide as the(Centered) tab itself , tab - bounds are as wide as the space occupied by the tab
           labelStyle: TextStyle(fontWeight: FontWeight.bold),
           unselectedLabelColor: Colors.black12,
+          //indicatorPadding: EdgeInsets.zero,
+          //labelPadding: EdgeInsetsGeometry.infinity,
+          //unselectedLabelStyle: TextStyle(fontWeight: FontWeight.w900),
         ),
         //centerTitle: true,
         //elevation: 9.0,
         flexibleSpace: FlexibleSpaceBar(), //research more
         iconTheme: IconThemeData(color: Colors.yellow, size: 50.0),
-        leading: Builder(
-          builder: (BuildContext context) {
-            return IconButton(
-              icon: const Icon(Icons.menu),
-              onPressed: () {
-                Scaffold.of(context).openDrawer();
-              },
-              tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
-            );
-          },
-        ),
+        // leading: Builder(
+        //   builder: (BuildContext context) {
+        //     return IconButton(
+        //       icon: const Icon(Icons.menu),
+        //       onPressed: () {
+        //         Scaffold.of(context).openDrawer();
+        //       },
+        //       tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+        //     );
+        //   },
+        // ),
         //primary: true,
       ),
       //backgroundColor: Colors.lightGreen,
