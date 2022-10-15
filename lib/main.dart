@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '10.padding.dart';
+import '11.stack.dart';
 
 void main() {
   runApp(const WidgetsPool());
@@ -26,8 +26,8 @@ class WidgetsPool extends StatelessWidget {
       //home: MyContainer(title: 'container'),
       //home: MyImage(title: 'container', imageProvider: image,),
       //home: MyButtons(title: 'container'),
-      home: MyPadding(title: 'container'),
-      //home: MyButtons(title: 'container'),
+      //home: MyPadding(title: 'container'),
+      home: MyStack(title: 'container'),
     );
   }
 }
