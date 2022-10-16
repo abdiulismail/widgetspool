@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '11.stack.dart';
+import '14.row.dart';
 
 void main() {
   runApp(const WidgetsPool());
@@ -27,7 +27,10 @@ class WidgetsPool extends StatelessWidget {
       //home: MyImage(title: 'container', imageProvider: image,),
       //home: MyButtons(title: 'container'),
       //home: MyPadding(title: 'container'),
-      home: MyStack(title: 'container'),
+      //home: MyStack(title: 'container'),
+      //home: MyColumn(title: 'column'),
+      //home: MyFlex(title: 'flex'),
+      home: MyRow(title: 'flex'),
     );
   }
 }
