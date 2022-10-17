@@ -21,7 +21,8 @@ class _MyHomePageState extends State<MyStack> {
       body: Stack(
         children: [
           Positioned(
-            left: 10.0,
+            bottom: 30,
+            right: 0,
             child: Text(
               'green',
               style: TextStyle(color: Colors.green),

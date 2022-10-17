@@ -17,7 +17,7 @@ class _MyHomePageState extends State<MyContainer> {
       ),
       body: Center(
         child: Container(
-          //color: Colors.red,
+          color: Colors.red,
           //height: 48.0,
           //width: 40.0,
           margin: EdgeInsets.all(10.0),
@@ -30,9 +30,8 @@ class _MyHomePageState extends State<MyContainer> {
             textAlign: TextAlign.center,
           ),
           //transform: Matrix4.rotationZ(0.1),
-          constraints: BoxConstraints(minWidth: 2.0, minHeight: 30.0),
-          decoration:
-              const FlutterLogoDecoration(), //a decoration to paint behind the child
+          constraints: BoxConstraints.expand(width: 300, height: 300),
+          //decoration: const FlutterLogoDecoration(), //a decoration to paint behind the child
           foregroundDecoration:
               UnderlineTabIndicator(), //decoration to paint infront of the child
         ),
