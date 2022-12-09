@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '0.scaffold.dart';
 import '26.gridViewBuilder.dart';
 
 void main() {
@@ -17,6 +18,7 @@ class WidgetsPool extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       //todo : Remove the comment on the preffered widget
+      home: const MyScaffold(title: 'WIDGETSPOOL'),
       //home: const MyAppBar(title: 'WIDGETSPOOL'),
       //home: const MyBottomAppBar(title: 'WIDGETSPOOL'),
       //home: MyFloatingActionBar(title: 'WIDGETSPOOL'),
@@ -41,7 +43,7 @@ class WidgetsPool extends StatelessWidget {
       //home: MyListViewCustom(title: 'chip'),
       //home: MyCustomScrollView(title: 'chip'),
       //home: MyGridViewCount(title: 'chip'),
-      home: MyGridViewBuilder(title: 'chip'),
+      //home: MyGridViewBuilder(title: 'chip'),
     );
   }
 }
