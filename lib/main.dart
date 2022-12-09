@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '0.scaffold.dart';
-import '26.gridViewBuilder.dart';
+import 'BasicWidgets/scaffold.dart';
 
 void main() {
   runApp(const WidgetsPool());

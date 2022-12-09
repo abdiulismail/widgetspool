@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+//cards define an area of the UI where you have laid out related information about
+//a specific entity. eg music app card might have label for album title, artist and release date
+
+
 class MyCard extends StatefulWidget {
   const MyCard({
     super.key,
